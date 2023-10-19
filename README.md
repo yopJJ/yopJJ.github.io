@@ -1,4 +1,4 @@
-# Project Title
+# Galore
 
 Multipurpose web tool e.g. colour picking, rickroll generator, downloading videos/music and more!
 
