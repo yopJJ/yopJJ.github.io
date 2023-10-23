@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
-	<script>
-		window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-	  </script>
-	  <script defer src="/_vercel/insights/script.js"></script>
-<head>
-	<link rel="stylesheet" href="styles.css">
-	<title>Galore | Home</title>
-</head>
-<body>
+  <head>
+    <title>XP.css example</title>
+    <meta charset="UTF-8" />
 
-</body>
+    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.3/dist/98.css" />
+  </head>
+
+  <body>
+    <div id="HideAlert'" class="window" style="width: 400px; vertical-align: middle; line-height: 1.44;">
+      <div class="title-bar">
+        <div class="title-bar-text" text-align="center">
+          GaloreSystem.UI.Alert
+        </div>
+
+      </div>
+      <div class="window-body">
+        <strong>Welcome to galore!, this is a multipurpose application to allow users to run and use other apps.</strong>
+        <section class="field-row" style="justify-content: flex-end">
+          <button onclick="HideFirstAlert">Continue</button>
+          <button id="Rickroll!">Help?!</button>
+        </section>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    document.getElementById("Rickroll!").onclick = function () {
+      location.href = "/Help";
+      };
+
+    function Hide() {
+      var x = document.getElementById('HideAlert');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+    
+    document.getElementById("HideFirstAlert").onclick = function () {
+      Hide();
+      };
+
+  </script>
 </html>
