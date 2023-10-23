@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>XP.css example</title>
+    <title>Galore | Home</title>
     <meta charset="UTF-8" />
 
     <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.3/dist/98.css" />
   </head>
 
-  <body>
+  <body> <!--- Main Code --->
     <div id="HideAlert'" class="window" style="width: 400px; vertical-align: middle; line-height: 1.44;">
       <div class="title-bar">
         <div class="title-bar-text" text-align="center">
@@ -16,20 +16,33 @@
 
       </div>
       <div class="window-body">
-        <strong>Welcome to galore!, this is a multipurpose application to allow users to run and use other apps.</strong>
+        <strong>Welcome to galore!, this is a multipurpose application to allow users to run and use apps and achieve more. Anything with this symbol "⚠️" or "🚧" means that it has not been implmented or devoloped for public use yet. <br> <br>Have a good day! :) <br>‎ 
+        </strong>
         <section class="field-row" style="justify-content: flex-end">
-          <button onclick="HideFirstAlert">Continue</button>
+          <button id="Home">Home</button>
+          <button id="News">News</button>
           <button id="Rickroll!">Help?!</button>
+          <button id="Contributors">Contributors 👥</button>
         </section>
       </div>
     </div>
   </body>
 
-  <script type="text/javascript">
+  <script type="text/javascript"> //Javascript For Webpage
+    // Buttons For Pages
     document.getElementById("Rickroll!").onclick = function () {
       location.href = "/Help";
       };
-
+    document.getElementById("Home").onclick = function () {
+      location.href = "/Home";
+      };
+    document.getElementById("News").onclick = function () {
+      location.href = "/News";
+      };
+    document.getElementById("Contributors").onclick = function () {
+      location.href = "/Contributors";
+      };
+      // Other Functions
     function Hide() {
       var x = document.getElementById('HideAlert');
       if (x.style.display === 'none') {
